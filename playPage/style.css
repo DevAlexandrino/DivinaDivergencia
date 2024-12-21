@@ -28,15 +28,63 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .largeScroll {
     height: 100%;
-    width: 15%;
+    width: 96px;
     background-color: aqua;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
 
     cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.largeScrollTittle {
+    height: 100%;
+    width: 96px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -4px;
+}
+
+.largeScrollContent {
+}
+
+.largeScroll.active {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    transition: 0.5s;
+}
+
+.largeScroll.active .largeScrollContent {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+
+    display: block;
 }
 
 #auxiliar {
@@ -45,7 +93,6 @@ body {
     background-color: red;
 
     padding: 8px;
-
 }
 
 #smallScrolls {
