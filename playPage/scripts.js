@@ -3,15 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     largeScrolls.forEach((scroll) => {
         scroll.addEventListener("click", () => {
-            const isActive = scroll.classList.contains("active");
-
             largeScrolls.forEach((otherScroll) => {
                 if (otherScroll !== scroll) {
-                    otherScroll.style.display = isActive ? "block" : "none";
+                    otherScroll.classList.add("hidden");
                     otherScroll.classList.remove("active");
                 }
             });
+
             scroll.classList.toggle("active");
+            
+            if (!scroll.classList.contains("active")) {
+                largeScrolls.forEach((otherScroll) => {
+                    otherScroll.classList.remove("hidden");
+                })
+            }
         });
     });
 });

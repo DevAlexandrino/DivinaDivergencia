@@ -48,7 +48,7 @@ body {
 
 .largeScrollTittle {
     height: 100%;
-    width: 96px;
+    min-width: 96px;
 
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
 
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .largeScroll.active .largeScrollContent {
@@ -87,11 +87,15 @@ body {
     display: block;
 }
 
+.largeScroll.hidden {
+    max-width: 0;
+}
+
 #auxiliar {
     height: 100%;
     width: 40%;
     background-color: red;
-    
+
     padding: 8px;
 }
 
