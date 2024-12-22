@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Engravers Old English";
+    src: url(/fonts/engravers-old-english.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
