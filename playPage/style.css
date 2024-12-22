@@ -59,9 +59,9 @@ body {
     justify-content: center;
     align-items: center;
 
+    font-family: Engravers Old English;
     font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase;
     writing-mode: vertical-lr;
     text-orientation: upright;
     letter-spacing: -4px;
@@ -72,8 +72,9 @@ body {
 }
 
 .largeScrollTittle h2::first-letter {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: red;
+    text-transform: uppercase;
 }
 
 .largeScrollTittle:hover {
@@ -93,10 +94,89 @@ body {
     transition: 0.5s ease;
 }
 
-.largeScroll.active .largeScrollContent {
+.largeScrollContent {
     height: 100%;
     width: 100%;
     background-color: #fff;
+}
+
+#largeScrollCharacterContent {
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#largeScrollCharacterContentColumn1, #largeScrollCharacterContentColumn2 {
+    height: 100%;
+    width: 50%;
+    padding: 16px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.characterContentTittle {
+    margin-bottom: 16px;
+
+    font-family: Engravers Old English;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+
+    cursor: default;
+}
+
+.characterContentTittle::first-letter {
+    font-size: 1.25em;
+    color: red;
+    text-transform: uppercase;
+}
+
+#characterInfos ul {
+    width: 100%;
+    list-style: none;
+
+    font-family: Engravers Old English;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#characterInfos ul li {
+    margin-bottom: 12px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    cursor: default;
+}
+
+#characterResistances ul {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    list-style: none;
+
+    font-family: Engravers Old English;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#characterResistances ul li {
+    margin-bottom: 8px;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    cursor: default;
 }
 
 .largeScroll.hidden {
@@ -149,9 +229,10 @@ body {
     justify-content: center;
     align-items: center;
 
+    font-family: Engravers Old English;
     font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
+    letter-spacing: 1px;
 
     cursor: pointer;
 
@@ -159,8 +240,9 @@ body {
 }
 
 .smallScrollTittle h2::first-letter {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: red;
+    text-transform: uppercase;
 }
 
 .smallScrollTittle:hover {
