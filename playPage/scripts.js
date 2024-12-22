@@ -1,22 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
     const largeScrolls = document.querySelectorAll("#largeScrolls .largeScroll");
 
-    largeScrolls.forEach((scroll) => {
-        scroll.addEventListener("click", () => {
-            largeScrolls.forEach((otherScroll) => {
-                if (otherScroll !== scroll) {
-                    otherScroll.classList.add("hidden");
-                    otherScroll.classList.remove("active");
+    largeScrolls.forEach((largeScroll) => {
+        const largeScrollTittle = largeScroll.querySelector(".largeScrollTittle");
+
+        largeScrollTittle.addEventListener("click", () => {
+            largeScrolls.forEach((otherLargeScroll) => {
+                if (otherLargeScroll !== largeScroll) {
+                    otherLargeScroll.classList.add("hidden");
+                    otherLargeScroll.classList.remove("active");
                 }
             });
 
-            scroll.classList.toggle("active");
+            largeScroll.classList.toggle("active");
             
-            if (!scroll.classList.contains("active")) {
-                largeScrolls.forEach((otherScroll) => {
-                    otherScroll.classList.remove("hidden");
+            if (!largeScroll.classList.contains("active")) {
+                largeScrolls.forEach((otherLargeScroll) => {
+                    otherLargeScroll.classList.remove("hidden");
                 })
             }
+        });
+    });
+
+    const smallScrolls = document.querySelectorAll("#smallScrolls .smallScroll");
+
+    smallScrolls.forEach((smallScroll) => {
+        const smallScrollTittle = smallScroll.querySelector(".smallScrollTittle");
+
+        smallScrollTittle.addEventListener("click", () => {
+            smallScroll.classList.toggle("active");
         });
     });
 });
