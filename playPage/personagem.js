@@ -1,4 +1,4 @@
- export const personagem = {
+ export var personagem = {
     dados: {
         nome: "",
         raca: "",
