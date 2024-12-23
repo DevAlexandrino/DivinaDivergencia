@@ -1,7 +1,7 @@
-const personagem = {
+ export const personagem = {
     dados: {
         nome: "",
-        raca: "",
+        raca: "Humano",
         classe: "",
         nivel: 1,
         experiencia: 0,

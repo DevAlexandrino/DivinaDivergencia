@@ -6,7 +6,9 @@
     <title>Divina Divergencia</title>
 
     <link rel="stylesheet" href="./style.css">
-    <script src="./scripts.js"></script>
+    <script  src="./scripts.js"></script>
+    <script type="module" src="./personagem.js"></script>
+    <script type="module" src="./functions.js"></script>
 </head>
 <body>
     <section id="smallScrolls">
@@ -85,17 +87,17 @@
                             <div id="largeScrollCharacterContentColumn1">
                                 <div class="characterContentTittle">
                                     <h3>
-                                        Informações
+                                        Informações <input type="button" value="Att" onclick="atualizarFicha()">
                                     </h3>
                                 </div>
                                 <div id="characterInfos">
                                     <ul>
-                                        <li>Raça<span id="characterInfo.raca">0</span></li>
-                                        <li>Núcleo<span id="characterInfo.nucleo">0</span></li>
-                                        <li>Genética<span id="characterInfo.genetica">0</span></li>
-                                        <li>Aptidões<span id="characterInfo.aptidoes">0</span></li>
-                                        <li>Maldições<span id="characterInfo.maldicoes">0</span></li>
-                                        <li>Mutações<span id="characterInfo.mutacoes">0</span></li>
+                                        <li>Raça<span id="characterInfo-raca">0</span></li>
+                                        <li>Núcleo<span id="characterInfo-nucleo">0</span></li>
+                                        <li>Genética<span id="characterInfo-genetica">0</span></li>
+                                        <li>Aptidões<span id="characterInfo-aptidoes">0</span></li>
+                                        <li>Maldições<span id="characterInfo-maldicoes">0</span></li>
+                                        <li>Mutações<span id="characterInfo-mutacoes">0</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -108,14 +110,14 @@
                                 <div id="characterResistances">
                                     <ul>
                                         <li>Eletricidade<span id="characterResistance.eletricidade">0</span></li>
-                                        <li>Calor<span id="characterResistance.calor">0</span></li>
-                                        <li>Frio<span id="characterResistance.frio">0</span></li>
-                                        <li>Corte<span id="characterResistance.corte">0</span></li>
-                                        <li>Impacto<span id="characterResistance.impacto">0</span></li>
-                                        <li>Perfuração<span id="characterResistance.perfuracao">0</span></li>
-                                        <li>Paralisia<span id="characterResistance.paralisia">0</span></li>
-                                        <li>Amedrontar<span id="characterResistance.amedrontar">0</span></li>
-                                        <li>Confusão<span id="characterResistance.confusao">0</span></li>
+                                        <li>Calor<span id="characterResistance-calor">0</span></li>
+                                        <li>Frio<span id="characterResistance-frio">0</span></li>
+                                        <li>Corte<span id="characterResistance-corte">0</span></li>
+                                        <li>Impacto<span id="characterResistance-impacto">0</span></li>
+                                        <li>Perfuração<span id="characterResistance-perfuracao">0</span></li>
+                                        <li>Paralisia<span id="characterResistance-paralisia">0</span></li>
+                                        <li>Amedrontar<span id="characterResistance-amedrontar">0</span></li>
+                                        <li>Confusão<span id="characterResistance-confusao">0</span></li>
                                     </ul>
                                 </div>    
                             </div>
