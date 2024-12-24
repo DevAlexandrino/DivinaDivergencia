@@ -4,8 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divina Divergencia</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
 </head>
 <body>
-    
+    <form id="characterCreationArea">
+        <header>
+            <h1>Criação de Personagem</h1>
+        </header>
+        <fieldset id="originArea">
+            <header>
+                <h2>Origem</h2>
+            </header>
+            <label for="characterName">
+                Nome:
+                <input id="characterName" type="text" placeholder="Digite o nome...">
+            </label>
+            <label for="characterAge">
+                Idade:
+                <input type="range" min="18" max="80">
+            </label>
+            <label for="characterRace">
+                Raça:
+                <select id="characterRace">
+                    <option value="" disabled selected>Escolha sua raça</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </label>
+            <label for="characterGenetics">
+                Genética
+                <div id="characterGenetics">
+                    <select id="characterGenetics1">
+                        <option value="" disabled selected>Escolha uma genética</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select id="characterGenetics2">
+                        <option value="" disabled selected>Escolha outra genética</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </label>    
+        </fieldset>
+        <fieldset id="historyArea">
+            <header>
+                <h2>História</h2>
+            </header>
+            <label for="characterFitness">
+                Aptidão:
+                <select id="characterFitness">
+                    <option value="" disabled selected>Escolha sua aptidão</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset id="statusArea">
+            <header>
+                <h2>Status</h2>
+                <p>Pontos de Status: <span id="statusPoints">0</span></p>
+            </header>
+            <div id="statusCircle">
+                <div id="statusCircle-Column1">
+                    <label id="status1" for="characterStatus-Initiative">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Iniciativa
+                        <input type="number" id="characterStatus-Initiative" class="characterStatus" value="0">
+                    </label>
+                    <label id="status2" for="characterStatus-Focus">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Atenção
+                        <input type="number" id="characterStatus-Attention" class="characterStatus" value="0">
+                    </label>
+                    <label id="status3" for="characterStatus-Strength">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Força
+                        <input type="number" id="characterStatus-Strength" class="characterStatus" value="0">
+                    </label>
+                    <label id="status4" for="characterStatus-Athletics">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Atletismo
+                        <input type="number" id="characterStatus-Athletics" class="characterStatus" value="0">
+                    </label>
+                </div>
+                <div id="statusCircle-Column2">
+                    <label id="status5" for="characterStatus-Intelligence">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Inteligência
+                        <input type="number" id="characterStatus-Intelligence" class="characterStatus" value="0">
+                    </label>
+                    <label id="status6" for="characterStatus-Precision">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Preecisão
+                        <input type="number" id="characterStatus-Precision" class="characterStatus" value="0">
+                    </label>
+                    <label id="status7" for="characterStatus-Desire">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Vontade
+                        <input type="number" id="characterStatus-Desire" class="characterStatus" value="0">
+                    </label>
+                    <label id="status8" for="characterStatus-Stealth">
+                        <div class="buttons">
+                            <button class="decreaseButton">-</button>
+                            <button class="increaseButton">+</button>
+                        </div>
+                        Furtividade
+                        <input type="number" id="characterStatus-Stealth" class="characterStatus" value="0">
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>

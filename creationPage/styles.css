@@ -1,0 +1,148 @@
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "JetBrain Mono";
+    color: black;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#characterCreationArea {
+    height: 100%;
+    width: 100%;
+}
+
+#statusArea {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#statusArea header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#statusArea header p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#statusArea header p span {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#statusCircle {
+    height: 384px;
+    width: 384px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#statusCircle-Column1 {
+    width: 50%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#statusCircle-Column2 {
+    width: 50%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#statusCircle label {
+    height: 64px;
+    width: 96px;
+
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.buttons button {
+    height: 16px;
+    width: 16px;
+    background-color: rgb(240, 185, 68);
+    border: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.decreaseButton {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.increaseButton {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.characterStatus {
+    width: 25%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid black 1px;
+
+    outline: none;
+
+    font-size: 32px;
+    text-align: center;
+}
+
+#status1 {
+    position: relative;
+    left: 40%;
+}
+
+#status4 {
+    position: relative;
+    left: 40%;
+}
+
+#status5 {
+    position: relative;
+    right: 40%;
+}
+
+#status8 {
+    position: relative;
+    right: 40%;
+}
