@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const largeScrolls = document.querySelectorAll("#largeScrolls .largeScroll");
+
+    const largeScrolls = document.querySelectorAll(".largeScroll");
 
     largeScrolls.forEach((largeScroll) => {
         const largeScrollTittle = largeScroll.querySelector(".largeScrollTittle");
@@ -22,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+
+
     const smallScrolls = document.querySelectorAll("#smallScrolls .smallScroll");
 
     smallScrolls.forEach((smallScroll) => {
@@ -31,4 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             smallScroll.classList.toggle("active");
         });
     });
+
+
+    
 });

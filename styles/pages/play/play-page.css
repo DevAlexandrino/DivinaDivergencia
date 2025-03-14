@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Engravers Old English";
-    src: url(/fonts/engravers-old-english.ttf) format("truetype");
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -258,7 +253,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
 
-    transform: translateY(-192px);
+    transform: translateY(-212px);
     transition: 0.5s ease;
 }
 
