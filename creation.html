@@ -3,9 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divina Divergencia</title>
+    <title>Divina Divergencia | Criação de Personagem</title>
+
+    <link rel="stylesheet" href="/styles/pages/creation/creation.css">
 </head>
 <body>
-    
+    <main>
+        <form action="">
+            <section id="secCaracteristicas">
+                <article>
+                    <h2>Pessoal</h2>
+
+                    <ul>
+                        <li>
+                            Nome
+                            <input type="text">
+                        </li>
+                        <li>
+                            Sobrenome
+                            <input type="text">
+                        </li>
+                        <li>
+                            Idade
+                            <input type="range" min="20" max="80"><span>0</span>
+                        </li>
+                        <li>
+                            Nacionalidade
+                            <select name="" id="">
+                                <option value="" selected disabled>Escolha uma opção</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            Sexo
+                            <label>Feminino<input type="radio" name="sexo" value="f"></label>
+                            <label>Masculino<input type="radio" name="sexo" value="m"></label>
+                        </li>
+                        <li>
+                            Raça
+                            <select name="" id="">
+                                <option value="" selected disabled>Escolha uma opção</option>
+                                <option value="humano">Humano</option>
+                                <option value="elfo">Elfo</option>
+                                <option value="fada">Fada</option>
+                            </select>
+                        </li>
+                        <li>
+                            Genética
+                            <ul>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="" selected disabled>Escolha uma opção</option>
+                                        <option value="robusto">Robusto</option>
+                                        <option value="atleta">Atleta</option>
+                                        <option value="raquítico">Raquítico</option>
+                                        <option value="inteligente">Inteligente</option>
+                                        <option value="centrado">Centrado</option>
+                                        <option value="vivaz">Vivaz</option>
+                                        <option value="preciso">Preciso</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select name="" id="">
+                                        <option value="" selected disabled>Escolha uma opção</option>
+                                        <option value="robusto">Robusto</option>
+                                        <option value="atleta">Atleta</option>
+                                        <option value="raquítico">Raquítico</option>
+                                        <option value="inteligente">Inteligente</option>
+                                        <option value="centrado">Centrado</option>
+                                        <option value="vivaz">Vivaz</option>
+                                        <option value="preciso">Preciso</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Aptidão
+                            <select name="" id="">
+                                <option value="" selected disabled>Escolha uma opção</option>
+                                <option value="mago">Mago</option>
+                                <option value="guerreiro">Guerreiro</option>
+                                <option value="malandro">Malandro</option>
+                                <option value="espadachin">Espadachin</option>
+                                <option value="atirador">Atirador</option>
+                                <option value="guerreiro Arcano">Guerreiro Arcano</option>
+                                <option value="ronin">Ronin</option>
+                                <option value="lutador">Lutador</option>
+                                <option value="soldado Mágico">Soldado Mágico</option>
+                            </select>
+                        </li>
+                    </ul>
+                </article>
+
+                <article id="atributos">
+                    <h2>Sub-Atributos</h2>
+
+                    <ul>
+                        <li>Vida <span>0</span></li>
+                        <li>Mana <span>0</span></li>
+                        <li>Vigor <span>0</span></li>
+                        <li>Frio <span>0</span></li>
+                        <li>Energia Anômala <span>0</span></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Combate</h2>
+
+                    <ul>
+                        <li>
+                            Ferimento
+                            <ul>
+                                <li>Dano <span>0</span></li>
+                                <li>Laceração <span>0</span></li>
+                                <li>Irritação <span>0</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Físico
+                            <ul>
+                                <li>Ataque <span>0</span></li>
+                                <li>Defesa <span>0</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Regeneração
+                            <ul>
+                                <li>Regeneração de Vida <span>0</span></li>
+                                <li>Regeneração de Vigor <span>0</span></li>
+                                <li>Regeneração de EA <span>0</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Chance / Dano Crítico
+                            <ul>
+                                <li>
+                                    Chance Crítica
+                                    <ul>
+                                        <li>Melee <span>0</span></li>
+                                        <li>Ranged <span>0</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Dano Crítico
+                                    <ul>
+                                        <li>Corte <span>30%</span></li>
+                                        <li>Perfuração <span>30%</span></li>
+                                        <li>Impacto <span>30%</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Amplificação
+                                    <ul>
+                                        <li>33% <span>1.1x</span></li>
+                                        <li>39% <span>1.3x</span></li>
+                                        <li>45% <span>1.5x</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Resistências</h2>
+
+                    <ul>
+                        <li>
+                            Físicas
+                            <ul>
+                                <li>Corte <span>0</span></li>
+                                <li>Impacto <span>0</span></li>
+                                <li>Perfuração <span>0</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Elementais
+                            <ul>
+                                <li>Calor <span>0</span></li>
+                                <li>Energia <span>0</span></li>
+                                <li>Frio <span>0</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            
+            <section id="secAtributos">
+                <article id="atcAtributos">
+                    <h2>Atributos</h2>
+                    <ul id="listaAtributos">
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Iniciativa <span>0</span></h3>
+                                <ul class="subAtributo">
+                                    <li>Movimentação <span>0</span></li>
+                                </ul>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Atenção <span>0</span></h3>
+                                <ul class="subAtributo">
+                                    <li>Percepção Passiva <span>0</span></h4>
+                                </ul>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Força <span>0</span></h3>
+                                <ul class="subAtributo">
+                                    <li>Arremesso <span>0</span></li>
+                                    <li>Peso <span>0</span></li>
+                                </ul>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Atletismo <span>0</span></h3>
+                                <ul class="subAtributo">
+                                    <li>Coordenação Motora <span>0</span></li>
+                                </ul>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Inteligência <span>0</span></h3>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Precisão <span>0</span></h3>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Vontade <span>0</span></h3>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                        <li class="atributo">
+                            <div class="valorAtributo">
+                                <h3>Furtividade <span>0</span></h3>
+                            </div>
+                            <div class="botoesIncremento">
+                                <button>+</button>
+                                <button>-</button>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section id="secExtras">
+                <p>a</p>
+            </section>
+        </form>
+    </main>
+    <section>
+            
+    </section>
 </body>
 </html>
